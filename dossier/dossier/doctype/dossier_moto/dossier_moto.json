@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-08-25 12:59:58.135712",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer_name",
+  "serial_no",
+  "item_code",
+  "item_name",
+  "date",
+  "date_immatriculation",
+  "n_immatriculation"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": ".######./.YYYY"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " customer_name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "serial_no",
+   "options": "Serial No",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "serial_no.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "item_code"
+  },
+  {
+   "fetch_from": "serial_no.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "item_name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "date"
+  },
+  {
+   "fieldname": "date_immatriculation",
+   "fieldtype": "Date",
+   "label": "date immatriculation"
+  },
+  {
+   "fieldname": "n_immatriculation",
+   "fieldtype": "Data",
+   "label": "n immatriculation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-25 13:09:09.009373",
+ "modified_by": "Administrator",
+ "module": "Dossier",
+ "name": "Dossier Moto",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
