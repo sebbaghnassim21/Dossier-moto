@@ -36,7 +36,8 @@
    "in_list_view": 1,
    "label": "serial_no",
    "options": "Serial No",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fetch_from": "serial_no.item_code",
@@ -68,7 +69,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 13:09:09.009373",
+ "modified": "2022-08-26 12:47:40.569406",
  "modified_by": "Administrator",
  "module": "Dossier",
  "name": "Dossier Moto",
