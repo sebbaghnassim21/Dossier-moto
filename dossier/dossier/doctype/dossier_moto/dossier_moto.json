@@ -13,8 +13,7 @@
   "item_name",
   "date",
   "date_immatriculation",
-  "n_immatriculation",
-  "amended_from"
+  "n_immatriculation"
  ],
  "fields": [
   {
@@ -27,7 +26,7 @@
    "fieldname": "customer_name",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": " customer_name",
+   "label": "Client",
    "options": "Customer",
    "reqd": 1
   },
@@ -35,7 +34,7 @@
    "fieldname": "serial_no",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "serial_no",
+   "label": "N\u00b0 de ch\u00e2ssis ",
    "options": "Serial No",
    "reqd": 1,
    "unique": 1
@@ -44,43 +43,34 @@
    "fetch_from": "serial_no.item_code",
    "fieldname": "item_code",
    "fieldtype": "Data",
-   "label": "item_code"
+   "label": "Code Article"
   },
   {
    "fetch_from": "serial_no.item_name",
    "fieldname": "item_name",
    "fieldtype": "Data",
-   "label": "item_name"
+   "label": "Article"
   },
   {
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "date"
+   "label": "Date"
   },
   {
    "fieldname": "date_immatriculation",
    "fieldtype": "Date",
-   "label": "date immatriculation"
+   "label": "La date de premi\u00e8re immatriculation"
   },
   {
    "fieldname": "n_immatriculation",
    "fieldtype": "Data",
-   "label": "n immatriculation"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Dossier Moto",
-   "print_hide": 1,
-   "read_only": 1
+   "label": "N\u00b0 d'immatriculation"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-28 08:16:42.349716",
+ "modified": "2022-08-28 08:32:59.031813",
  "modified_by": "Administrator",
  "module": "Dossier",
  "name": "Dossier Moto",
