@@ -13,7 +13,8 @@
   "item_name",
   "date",
   "date_immatriculation",
-  "n_immatriculation"
+  "n_immatriculation",
+  "amended_from"
  ],
  "fields": [
   {
@@ -52,8 +53,9 @@
    "label": "item_name"
   },
   {
+   "default": "Today",
    "fieldname": "date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
    "label": "date"
   },
   {
@@ -65,11 +67,20 @@
    "fieldname": "n_immatriculation",
    "fieldtype": "Data",
    "label": "n immatriculation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Dossier Moto",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-26 12:47:40.569406",
+ "modified": "2022-08-28 08:16:42.349716",
  "modified_by": "Administrator",
  "module": "Dossier",
  "name": "Dossier Moto",
